@@ -1,0 +1,381 @@
+/* ---------- Basic settings for the whole page ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* This keeps the content in the middle of the screen */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.logo span {
+  color: #2563eb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+/* The Menu button is hidden on big screens */
+.menu-btn {
+  display: none;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ---------- Home / Hero ---------- */
+.hero {
+  padding: 70px 0;
+  background-color: #f9fafb;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hello {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #111827;
+}
+
+.hero h2 {
+  font-size: 22px;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  max-width: 480px;
+  color: #4b5563;
+}
+
+.hero-buttons {
+  margin-top: 22px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: 2px solid #2563eb;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  text-decoration: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #2563eb;
+}
+
+.btn-outline:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 60px 0;
+}
+
+/* A light grey background so the sections look different one after another */
+.gray {
+  background-color: #f9fafb;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #111827;
+  margin-bottom: 26px;
+  border-bottom: 3px solid #2563eb;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* ---------- Cards and grid ---------- */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.college {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.year {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-size: 13px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+/* ---------- About ---------- */
+.about-box p {
+  margin-bottom: 14px;
+}
+
+.about-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.about-list li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Education timeline ---------- */
+.timeline {
+  border-left: 3px solid #e5e7eb;
+  padding-left: 24px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  background-color: #2563eb;
+  border-radius: 50%;
+  position: absolute;
+  left: -31px;
+  top: 24px;
+}
+
+/* ---------- Tags ---------- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #eff6ff;
+  color: #1d4ed8;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* ---------- Projects ---------- */
+.project-card .link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+/* ---------- Lists ---------- */
+.bullet-list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.bullet-list li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Contact ---------- */
+.contact-box {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 9px;
+  margin-bottom: 14px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: #111827;
+  color: #ffffff;
+  padding: 24px 0;
+}
+
+.footer .small {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ---------- Mobile screens ---------- */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  /* The menu is hidden until the Menu button is clicked */
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 12px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
